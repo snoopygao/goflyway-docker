@@ -1,11 +1,5 @@
-FROM golang:alpine
-
+FROM alpine
 LABEL maintainer="snoopygao <gaoxing2000@gmail.com>"
-
-COPY . /
-
+COPY ./goflyway /
 WORKDIR /
-
 EXPOSE 8100
-
-CMD ["/goflyway"]
