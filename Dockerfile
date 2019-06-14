@@ -2,10 +2,10 @@ FROM golang:alpine
 
 LABEL maintainer="snoopygao <gaoxing2000@gmail.com>"
 
-COPY goflyway /
+COPY . /
 
 WORKDIR /
 
 EXPOSE 8100
 
-CMD ["/goflyway","-k","aaaabbbb8"]
+CMD ["/goflyway"]
